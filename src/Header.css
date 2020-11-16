@@ -1,6 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom:  5px solid red;
     
 }
@@ -10,4 +11,8 @@
     height: 100px;
     object-fit: contain;
    
+}
+
+.header__icon{
+    padding: 50px
 }
