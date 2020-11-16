@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 import './App.css';
 
 function App() {
@@ -8,12 +9,12 @@ function App() {
         lets build tinder
 
         {/* header */}
+        <Header />
         {/* tinder cards */}
         {/* buttons below tinder cards*/}
 
         {/* chat screen*/}
         {/* individual chat screen*/}
-        hello
       </h1>
     </div>
   );
