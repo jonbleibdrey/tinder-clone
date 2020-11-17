@@ -1,10 +1,7 @@
-import React from 'react'
-import Header from './Header'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React from 'react';
+import Header from './Header';
+import TinderCards from './TinderCards';
+import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -14,11 +11,11 @@ function App() {
        <Header />
         <Router>
             <Switch>
-              <Route exact path="/">
-                <h1>I am Home page</h1>
-              </Route>
               <Route exact path="/chat">
                 <h1>I am the Chat page</h1>
+              </Route>
+              <Route exact path="/">
+               <TinderCards />
               </Route>
             </Switch>
         </Router>
