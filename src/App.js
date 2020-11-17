@@ -11,15 +11,17 @@ function App() {
   return (
     <div className="App">
       <h1>
+       <Header />
         <Router>
-        <Header />
-        <Switch>
-          <Route>
-            
-          </Route>
-        </Switch>
+            <Switch>
+              <Route exact path="/">
+                <h1>I am Home page</h1>
+              </Route>
+              <Route exact path="/chat">
+                <h1>I am the Chat page</h1>
+              </Route>
+            </Switch>
         </Router>
-
       </h1>
     </div>
   );
