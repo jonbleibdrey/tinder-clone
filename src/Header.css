@@ -6,6 +6,13 @@
     
 }
 
+/* .header > h3 {
+
+    text-align: center;
+    bottom: 10px;
+    color: black;
+} */
+
 .header__logo{
   
     height: 100px;
@@ -14,5 +21,6 @@
 }
 
 .header__icon{
-    padding: 50px
+    padding: 60px;
+    
 }
