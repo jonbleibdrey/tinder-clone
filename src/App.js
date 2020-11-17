@@ -1,23 +1,29 @@
 import React from 'react'
 import Header from './Header'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <h1>
-        lets build tinder
-
-        {/* header */}
+        <Router>
         <Header />
-        {/* tinder cards */}
-        {/* buttons below tinder cards*/}
+        <Switch>
+          <Route>
+            
+          </Route>
+        </Switch>
+        </Router>
 
-        {/* chat screen*/}
-        {/* individual chat screen*/}
       </h1>
     </div>
   );
 }
 
 export default App;
+
