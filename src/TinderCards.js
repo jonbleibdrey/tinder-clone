@@ -22,10 +22,9 @@ function TinderCards() {
 
  
     return (
-        <div>
-            <h1>Tinder card!</h1>
+        <div className="tinderCards__cardContainer">
             
-            <div className="tinderCards__cardContainer">
+            
             {people.map(person => (
                 <TinderCard className="swipe" 
                 key={person.name}
@@ -37,7 +36,7 @@ function TinderCards() {
                     </div>
                 </TinderCard> 
             ))}
-            </div>
+            
         </div>
     )
 }
