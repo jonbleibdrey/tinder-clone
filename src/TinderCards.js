@@ -10,6 +10,7 @@ import "./TinderCard.css"
 function TinderCards() {
     const [people, setPeople] = useState ([]);
 
+    
 
     useEffect(() => {
       database
