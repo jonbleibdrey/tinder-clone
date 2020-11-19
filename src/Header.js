@@ -14,8 +14,9 @@ function Header() {
             <IconButton>
             <FaceIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
             </IconButton>
-
+            <Link to="/">
             <img className="header__logo" src={Flag} alt="america flag"/>
+            </Link>
             <Link to="/chat">
             <IconButton>
             <MailOutlineIcon style={{ color: blue[800], fontSize: 65  }} className="header__icon"/>
