@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import "./Header.css"
 import FaceIcon from '@material-ui/icons/Face';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -15,9 +16,11 @@ function Header() {
             </IconButton>
 
             <img className="header__logo" src={Flag} alt="america flag"/>
+            <Link to="/chat">
             <IconButton>
             <MailOutlineIcon style={{ color: blue[800], fontSize: 65  }} className="header__icon"/>
             </IconButton>
+            </Link>
         </div>
     )
 }

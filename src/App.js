@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <h1>
-       <Header />
         <Router>
+          <Header />
             <Switch>
               <Route exact path="/chat">
                 <h1>I am the Chat page</h1>
