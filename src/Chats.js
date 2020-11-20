@@ -9,7 +9,7 @@ function Chats() {
             name="mark"
             message="yo mark what up"
             timestamp="40 seconds ago"
-            profilePic="..."
+            profilePic="https://cdn.britannica.com/41/172741-138-647B3D53/overview-Bill-Clinton.jpg"
             />
         </div>
     )
