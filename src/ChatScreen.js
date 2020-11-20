@@ -3,7 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 import "./ChatScreen.css"
 
 function ChatScreen() {
-    const [messages, setMessages] = useState([
+    const [messages] = useState([
         {
             name:"Mark",
             image: "https://cdn.britannica.com/41/172741-138-647B3D53/overview-Bill-Clinton.jpg",
