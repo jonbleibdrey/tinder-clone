@@ -3,7 +3,8 @@ import Avatar from "@material-ui/core/Avatar";
 import "./ChatScreen.css"
 
 function ChatScreen() {
-    const [messages] = useState([
+    const [input, setInput] = useState('')
+    const [messages, setMessages] = useState([
         {
             name:"Mark",
             image: "https://cdn.britannica.com/41/172741-138-647B3D53/overview-Bill-Clinton.jpg",
@@ -19,7 +20,11 @@ function ChatScreen() {
         },
     ])
 
-
+        const handleSend = e => {
+            e.preventDefault();
+            setMessages([...messages, {message: input}]);
+            setInput('')
+        }
     return (
         <div className="chatScreen">
             <p className="chatScreen__timestamp">you matched with mark on 10/08/20</p>
@@ -39,8 +44,8 @@ function ChatScreen() {
 
             
                 <form className="chatScreen__input">
-                    <input className="chatScreen__inputField" type="text" placeholder="Type a message..."/>
-                    <button className="chatScreen__inputButton">SEND</button>
+                    <input value={input} onChange={(e) => setInput(e.target.value)} className="chatScreen__inputField" type="text" placeholder="Type a message..."/>
+                    <button onClick={handleSend}type="submit"className="chatScreen__inputButton">SEND</button>
                 </form>
         
 
