@@ -1,6 +1,12 @@
 .profile {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    
+    border-bottom: 4px solid #1565c0;
+ 
+  
     
    
 }
