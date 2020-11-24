@@ -18,9 +18,11 @@ function Header({backButton}) {
                 <ArrowBackIosIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
                 </IconButton>
             ):(
+                <Link to="/profile">
                 <IconButton>
                 <FaceIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
                 </IconButton>
+                </Link>
             )}
            
             <Link to="/">

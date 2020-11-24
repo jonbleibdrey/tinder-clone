@@ -26,6 +26,9 @@ function App() {
                <TinderCards />
                <SwipeButtons/>
               </Route>
+              <Route exact path="/profile">
+              <Header />
+              </Route>
             </Switch>
         </Router>
       </h1>
