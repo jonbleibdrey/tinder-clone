@@ -6,16 +6,23 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import IconButton from '@material-ui/core/IconButton';
-
+import Alert from '@material-ui/lab/Alert';
 import "./SwipeButtons.css"
 
 function SwipeButtons() {
-    return (
-        <div className="swipeButtons">
 
-            <IconButton className="swipeButtons__repeat">
-            <ReplayIcon fontSize="large" />
+    function anAlert(){
+        alert("Sorry,working on it. Feel free to swipe though?")
+    }
+
+    return (
+        <div className="swipeButtons" onClick={anAlert}>
+            
+          
+            <IconButton className="swipeButtons__repeat" >
+            <ReplayIcon fontSize="large"  />
             </IconButton>
+       
 
             <IconButton className="swipeButtons__left">
             <CloseIcon fontSize="large" />
