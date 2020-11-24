@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Chats from './Chats';
+import Profile from './Profile';
 import ChatScreen from './ChatScreen';
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
@@ -28,6 +29,7 @@ function App() {
               </Route>
               <Route exact path="/profile">
               <Header />
+              <Profile/>
               </Route>
             </Switch>
         </Router>
