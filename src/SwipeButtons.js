@@ -12,7 +12,7 @@ import "./SwipeButtons.css"
 function SwipeButtons() {
 
     function anAlert(){
-        alert("Sorry,working on it. Feel free to swipe though?")
+        alert("Sorry,working on it. Feel free to swipe though ?" )
     }
 
     return (
