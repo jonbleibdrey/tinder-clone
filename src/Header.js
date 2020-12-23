@@ -15,23 +15,23 @@ function Header({backButton}) {
         <div className="header">
             {backButton ? (
                 <IconButton onClick={()=> history.replace(backButton)}>
-                <ArrowBackIosIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
+                    <ArrowBackIosIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
                 </IconButton>
             ):(
                 <Link to="/profile">
-                <IconButton>
-                <FaceIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
-                </IconButton>
+                    <IconButton>
+                        <FaceIcon style={{ color: blue[800], fontSize: 65 }} className="header__icon"/>
+                    </IconButton>
                 </Link>
             )}
            
             <Link to="/">
-            <img className="header__logo" src={Flag} alt="america flag"/>
+                <img className="header__logo" src={Flag} alt="america flag"/>
             </Link>
             <Link to="/chat">
-            <IconButton>
-            <MailOutlineIcon style={{ color: blue[800], fontSize: 65  }} className="header__icon"/>
-            </IconButton>
+                <IconButton>
+                <MailOutlineIcon style={{ color: blue[800], fontSize: 65  }} className="header__icon"/>
+                </IconButton>
             </Link>
         </div>
     )

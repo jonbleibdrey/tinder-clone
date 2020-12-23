@@ -10,8 +10,6 @@ import "./TinderCard.css"
 function TinderCards() {
     const [people, setPeople] = useState ([]);
 
-    
-
     useEffect(() => {
       database
       .collection('people')
@@ -24,20 +22,13 @@ function TinderCards() {
  
     return (
         <div className="tinderCards__cardContainer">
-            
-            
             {people.map(person => (
-                <TinderCard className="swipe" 
-                key={person.name}
-                preventSwipe={['up', 'down']}>
-
+                <TinderCard className="swipe" key={person.name} preventSwipe={['up', 'down']}>
                     <div style={{backgroundImage: `url(${person.url})`}} class="card">
-                    <h3>{person.name}</h3>
-
+                        <h3>{person.name}</h3>
                     </div>
                 </TinderCard> 
             ))}
-            
         </div>
     )
 }

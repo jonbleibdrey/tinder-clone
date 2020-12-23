@@ -17,29 +17,21 @@ function SwipeButtons() {
 
     return (
         <div className="swipeButtons" onClick={anAlert}>
-            
-          
             <IconButton className="swipeButtons__repeat" >
-            <ReplayIcon fontSize="large"  />
+                <ReplayIcon fontSize="large"  />
             </IconButton>
-       
-
             <IconButton className="swipeButtons__left">
-            <CloseIcon fontSize="large" />
+                <CloseIcon fontSize="large" />
             </IconButton>
-
             <IconButton className="swipeButtons__star">
-            <StarRateIcon fontSize="large" />
+                <StarRateIcon fontSize="large" />
             </IconButton>
-
             <IconButton className="swipeButtons__right">
-            <FavoriteIcon fontSize="large" />
+                <FavoriteIcon fontSize="large" />
             </IconButton>
-
             <IconButton className="swipeButtons__lightning">
-            <FlashOnIcon fontSize="large" />
+                <FlashOnIcon fontSize="large" />
             </IconButton>
-            
         </div>
     )
 }
