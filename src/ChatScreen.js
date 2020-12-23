@@ -28,27 +28,22 @@ function ChatScreen() {
     return (
         <div className="chatScreen">
             <p className="chatScreen__timestamp">you matched with mark on 10/08/20</p>
-            {messages.map( (message) => (
-                message.name ? (
+                {messages.map( (message) => (
+                    message.name ? (
                     <div className="chatScreen__message">
-                    <Avatar className="chatScreen__image" alt={message.name} src={message.image}/>
-                    <h6 className="chatScreen__text">{message.message}</h6>
+                        <Avatar className="chatScreen__image" alt={message.name} src={message.image}/>
+                        <h6 className="chatScreen__text">{message.message}</h6>
                     </div>
                 ) : (
                     <div className="chatScreen__message">
-                    <h6 className="chatScreen__textUser">{message.message}</h6>
+                        <h6 className="chatScreen__textUser">{message.message}</h6>
                     </div>
                 )
-                
             ))}
-
-            
                 <form className="chatScreen__input">
                     <input value={input} onChange={(e) => setInput(e.target.value)} className="chatScreen__inputField" type="text" placeholder="Type a message..."/>
                     <button onClick={handleSend}type="submit"className="chatScreen__inputButton">SEND</button>
                 </form>
-        
-
         </div>
     )
 }

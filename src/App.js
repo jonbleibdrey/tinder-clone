@@ -14,22 +14,22 @@ function App() {
       <h1>
         <Router>
             <Switch>
-            <Route exact path="/chat/:person">
-              <Header backButton="/chat" />
+              <Route exact path="/chat/:person">
+                <Header backButton="/chat" />
                 <ChatScreen/>
               </Route>
               <Route exact path="/chat">
-              <Header backButton="/" />
+                <Header backButton="/" />
                 <Chats/>
               </Route>
               <Route exact path="/">
-              <Header />
-               <TinderCards />
-               <SwipeButtons/>
+                <Header />
+                <TinderCards />
+                <SwipeButtons/>
               </Route>
               <Route exact path="/profile">
-              <Header />
-              <Profile/>
+                <Header />
+                <Profile/>
               </Route>
             </Switch>
         </Router>
